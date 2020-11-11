@@ -1,0 +1,39 @@
+.toolbar-container{
+    --ion-background-color: #c79c00f6;
+}
+
+.main{
+    width: 100%;
+    height: 30%;
+    background-color: #f5c107;
+    border-radius: 0px 0px 25px 25px;
+}
+
+.card{
+    position: absolute;
+    top: 20%;
+}
+
+.card2{
+    position: absolute;
+    top: 45%;
+}
+
+ion-card{
+    width: 80%;
+    height: 70%;
+
+}
+
+ion-card-content{
+    padding: 28%;
+}
+
+.label{
+    text-align: center;
+}
+
+.title{
+    font-weight: bolder;
+    padding: 5%;
+}
