@@ -1,0 +1,44 @@
+<!-- <ion-header>
+  <ion-toolbar [color]="primary">
+    <ion-title>Fieldworks</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content>
+<div class="main">
+  <h1 class="title">Fieldworks</h1>
+</div>
+<ion-grid [fixed]="true" class="card">
+  <ion-row>
+    <ion-col>
+      <ion-card>
+        <ion-card-content >
+          <img src="./assets/icon/diskette.png" />
+          <span class="label">Pull</span>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+    <ion-col>
+      <ion-card>
+        <ion-card-content (click) = "goToorder()">
+          <img src="./assets/icon/briefcase.png" />
+          <span class="label">Order</span>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+  </ion-grid>
+<ion-grid class="card2" [fixed] = 'true'>
+  <ion-row>
+    <ion-col>
+      <ion-card>
+        <ion-card-content (click) = 'gotoSales()'>
+          <img src="./assets/icon/schedule.png" />
+         <span class="label">Sales</span>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+    <ion-col></ion-col>
+  </ion-row>
+</ion-grid>
+</ion-content>

@@ -25,3 +25,19 @@
 #container a {
   text-decoration: none;
 }
+
+ion-content{
+  --ion-background-color: #FFE381;
+}
+
+.main{
+  margin: 35% auto;
+}
+
+ion-avatar{
+  margin: 30% auto;
+}
+ion-button{
+  border: 1px solid black;
+  border-radius: 11px;
+}
