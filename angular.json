@@ -38,7 +38,8 @@
               },
               {
                 "input": "src/global.scss"
-              }
+              },
+              "node_modules/sweetalert2/src/sweetalert2.scss"
             ],
             "scripts": []
           },

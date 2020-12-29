@@ -10,50 +10,53 @@
 <ion-content>
   <!-- <ion-card>
     <ion-card-content> -->
-      <form>
+      <form [formGroup]="customerForm" (ngSubmit)="storeData()">
   <ion-item>
     <ion-label>Customer</ion-label>
-    <ion-select interface="popover">
+    <ion-select interface="popover" formControlName="customerType">
       <ion-select-option value="new">New Customer</ion-select-option>
       <ion-select-option value="existing">Existing Customer</ion-select-option>
     </ion-select>
   </ion-item>
   <ion-item>
     <ion-label position="floating">Name</ion-label>
-    <ion-input></ion-input>
+    <ion-input formControlName="customerName"></ion-input>
   </ion-item>
   <ion-item>
     <ion-label position="floating">Address</ion-label>
-    <ion-input></ion-input>
+    <ion-input formControlName="customerAddress"></ion-input>
   </ion-item>
   <ion-item>
     <ion-label position="floating">Area</ion-label>
-    <ion-input></ion-input>
+    <ion-input formControlName="customerArea"></ion-input>
   </ion-item>
   <ion-item>
     <ion-label position="floating">City</ion-label>
-    <ion-input></ion-input>
+    <ion-input formControlName="customerCity"></ion-input>
   </ion-item>
   <ion-item>
     <ion-label position="floating">Mobile Number</ion-label>
-    <ion-input></ion-input>
+    <ion-input formControlName="customerMobile"></ion-input>
   </ion-item>
   <ion-item>
     <ion-label>Payment Type</ion-label>
-    <ion-select interface="popover">
+    <ion-select interface="popover" formControlName="customerPaymentType">
       <ion-select-option value="new">credit</ion-select-option>
       <ion-select-option value="existing">Emi</ion-select-option>
     </ion-select>
   </ion-item>
   <ion-item>
     <ion-label>Day</ion-label>
-    <ion-select interface="popover">
+    <ion-select interface="popover" formControlName="customerDay">
       <ion-select-option value="new">test</ion-select-option>
       <ion-select-option value="existing">test</ion-select-option>
     </ion-select>
   </ion-item>
+  <ion-button type="submit" color="warning">
+    Add Customer
+  </ion-button>
   </form>
 <!-- </ion-card-content>
   </ion-card> -->
-  <ion-button color="warning" style="float: right;">Reset</ion-button>
+  <ion-button color="warning" style="float: right;" (click) = "resetForm()">Reset</ion-button>
 </ion-content>

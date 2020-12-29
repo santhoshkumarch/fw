@@ -24,3 +24,9 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+.inputRadius{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding-left: 10px;
+  }

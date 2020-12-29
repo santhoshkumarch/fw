@@ -11,16 +11,21 @@ import { AppRoutingModule } from './app-routing.module';
 import { LottieSplashScreen } from '@ionic-native/lottie-splash-screen/ngx';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
-
+import { HttpClientModule } from '@angular/common/http';
+import { SQLite } from '@ionic-native/sqlite/ngx';
+import { SQLitePorter } from '@ionic-native/sqlite-porter/ngx';
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, BrowserAnimationsModule],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, BrowserAnimationsModule, HttpClientModule],
   providers: [
     StatusBar,
     SplashScreen, LottieSplashScreen,
     MaterialModule,
-    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
+    HttpClientModule,
+    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
+    SQLite,
+    SQLitePorter
   ],
   bootstrap: [AppComponent]
 })
